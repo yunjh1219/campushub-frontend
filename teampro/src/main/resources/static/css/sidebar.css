@@ -19,6 +19,7 @@ ul, li, a {
     padding: 0;
     margin: 0;
     box-sizing: border-box;        /* 패딩과 보더가 너비에 포함되도록 */
+    border-right: 1px solid grey;
 }
 
 /* 사이드바 내 snb 영역 */
@@ -41,7 +42,7 @@ ul, li, a {
 .snb_depth1 > li {
     padding: 0px 0px;            /* 항목 안쪽 여백 */
     border-bottom: 1px solid #444; /* 항목 구분선 */
-    background-color: red;        /* 기본 배경 색 */
+
 }
 
 /* snb_depth1의 a 태그 스타일 */
@@ -59,13 +60,17 @@ ul, li, a {
 }
 
 .snb_depth2 > li {
-    background-color: orange;
     color: white; /*뒤에 네모 색상*/
+
 }
 
 .snb_depth2 > li > a {
+    background-color: white;
+    padding: 0 10px;
     display: block;
     color: black;
+
+    border-bottom: 1px solid silver;
 }
 
 /* snb_depth3 스타일 */
@@ -77,8 +82,27 @@ ul, li, a {
 .snb_depth3 > li {
     background-color: grey;
     color: black; /*뒤에 네모 색상*/
+    padding: 5px 0;
 }
 
 .snb_depth3 > li > a {
+    padding: 0 20px;
     color: #dddddd;
+}
+
+
+/*-----[ 메뉴 옆에 이모티콘 ]-----*/
+/*--------------------------------------------------------------*/
+.snb_depth1 > li > a::after {
+    content: ' ▼';
+    font-size: 12px;
+    position: absolute;   /* 절대 위치로 설정 */
+    right: 10px;          /* 오른쪽 끝에 위치 */
+
+
+}
+
+/* 클릭 시 180도 회전: 위로 */
+.snb_depth1 > li.open > a::after {
+    content: '▲';
 }

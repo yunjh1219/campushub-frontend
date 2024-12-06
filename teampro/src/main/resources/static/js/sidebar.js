@@ -6,25 +6,32 @@ $(document).ready(function(){
 
         // depth2 메뉴가 화면상에 보일 때는 위로 보드랍게 접고 아니면 아래로 보드랍게 펼치기
         if( depth2.is(":visible") ){
-            depth2.slideUp();
+            depth2.slideUp(100);  // 100ms 동안 슬라이드 업
+            // 화살표 회전 원래대로 되돌리기
+            $(this).parent().removeClass("open");
         }else{
-            depth2.slideDown();
+            depth2.slideDown(100);  // 100ms 동안 슬라이드 다운
+            // 화살표 180도 회전
+            $(this).parent().addClass("open");
         }
     });
 });
 
 // depth2의 a 태그 클릭 시 depth3 메뉴 토글
-$(".snb_depth2 li>a").click(function(){
+$(".snb_depth2 li > a").click(function(){
     var depth3 = $(this).next("ul");
 
     // depth3 메뉴가 화면상에 보일 때는 위로 보드랍게 접고 아니면 아래로 보드랍게 펼치기
     if( depth3.is(":visible") ){
-        depth3.slideUp();
+        depth3.slideUp(100);  // 100ms 동안 슬라이드 업
+        // 화살표 회전 원래대로 되돌리기
+        $(this).parent().removeClass("open");
     }else{
-        depth3.slideDown();
-
+        depth3.slideDown(100);  // 100ms 동안 슬라이드 다운
+        // 화살표 180도 회전
+        $(this).parent().addClass("open");
     }
+
     // 클릭 시 부모 메뉴인 depth2는 열리지 않도록
     return false;  // 이벤트 버블링을 막음
 });
-
