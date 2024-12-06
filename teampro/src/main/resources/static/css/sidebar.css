@@ -29,6 +29,21 @@ ul, li, a {
     height: 100%;                  /* 부모의 높이를 100%로 상속 */
 }
 
+/* 검색 입력란 스타일 */
+.menu-search-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+.menu-search {
+    width: 100%;
+    padding: 10px 35px 10px 10px; /* 오른쪽에 여백을 주어 돋보기 아이콘을 넣을 공간 확보 */
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+
 /* snb 내 snb_depth1의 스타일 */
 .snb > .snb_depth1 {
     display: flex;
