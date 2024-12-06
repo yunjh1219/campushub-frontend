@@ -50,41 +50,31 @@ ul, li, a {
     display: block;                /* 링크를 블록 요소로 설정하여 클릭 영역 확대 */
     padding: 10px 20px;            /* 링크 안쪽 여백 */
     background-color: darkgoldenrod;        /* 기본 배경 색 */
-    border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
 }
 
 /* snb_depth2 스타일 */
 .snb_depth2 {
+    position: relative;
     display: none;                /* 기본적으로 숨겨둠 */
 }
 
 .snb_depth2 > li {
-    border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    width: 100%;  /* 부모 요소의 너비를 100%로 설정 */
-    display: block;  /* block 요소로 설정하여 가로 영역을 확장 */
     background-color: orange;
     color: white; /*뒤에 네모 색상*/
 }
 
 .snb_depth2 > li > a {
+    display: block;
     color: black;
 }
 
 /* snb_depth3 스타일 */
 .snb_depth3 {
+    position: relative;
     display: none;                /* 기본적으로 숨겨둠 */
 }
 
 .snb_depth3 > li {
-    border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    width: 100%;  /* 부모 요소의 너비를 100%로 설정 */
-    display: block;  /* block 요소로 설정하여 가로 영역을 확장 */
     background-color: grey;
     color: black; /*뒤에 네모 색상*/
 }
