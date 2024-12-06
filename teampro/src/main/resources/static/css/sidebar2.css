@@ -1,0 +1,114 @@
+.sidebar {
+    width: 200px;
+    height: 100%;
+    background-color: #f4f4f4;
+}
+
+ul, li, a {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.snb{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/*-----[ 메인메뉴(depth1) ]-----*/
+/*--------------------------------------------------------------*/
+
+.snb_depth1 {
+    border-top: 2px solid blue;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.snb_depth1 a{
+    height: 40px;
+    display: block;
+    cursor:pointer;
+    padding: 10px;
+    background-color: #f4f4f4;
+    text-decoration: none;
+    color: #000;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+
+/*-----[ 서브메뉴(depth2) ]-----*/
+/*--------------------------------------------------------------*/
+
+.snb_depth2 li a{
+    background-color: white;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.snb_depth2{
+    display:none;
+}
+/*--------------------------------------------------------------*/
+
+
+/*-----[ 서브메뉴(depth3) ]-----*/
+/*--------------------------------------------------------------*/
+.snb_depth3{
+    display: none;
+}
+
+.snb_depth3 li a{
+    font-size: 10px;
+    background-color: #f4f4f4;
+}
+/*--------------------------------------------------------------*/
+
+
+
+/*-----[ 메뉴 옆에 이모티콘 ]-----*/
+/*--------------------------------------------------------------*/
+.snb_depth1 > li > a::after {
+    content: ' ▼';
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+}
+
+/* 클릭 시 180도 회전: 위로 */
+.snb_depth1 > li.open > a::after {
+    content: '▲';
+}
+
+.snb_depth2 > li > a::after{
+    color: #adadad;
+    content: '▼';
+    font-size: 10px;
+    position: absolute;
+    right: 10px;
+}
+
+/* 클릭 시 180도 회전: 위로 */
+.snb_depth2 > li.open > a::after {
+    content: '▲';
+}
+
+.snb_depth3 > li > a::after {
+    content: none;
+}
+
+.snb_depth2 a::before {
+    content: '-';             /* 기호 추가 */
+    font-size: 10px;          /* 기호 크기 */
+    color: red;               /* 기호 색상 */
+    line-height: 1.2;         /* 줄 높이 조정 (기호가 텍스트와 맞춰지게) */
+    vertical-align: middle;   /* 기호의 수직 정렬을 가운데로 맞춤 */
+    margin-right: 5px;        /* 기호와 텍스트 사이 여백 */
+}
+
+/*--------------------------------------------------------------*/
