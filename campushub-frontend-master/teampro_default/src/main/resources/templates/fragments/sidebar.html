@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title> 사이드바 영역 </title>
+</head>
+<body>
+<!-- sidebarFragment 선언 -->
+<th:block th:fragment="sidebarFragment">
+    <aside class="sidebar">
+        <nav class="snb">
+            <ul class="snb_depth1">
+                <li>
+                    <a>학적</a>
+                    <ul class="snb_depth2">
+                        <li>
+                            <a>변경 및 신청</a>
+                            <ul class="snb_depth3">
+                                <li>
+                                    <a href="#">학적변동신청</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a>수업</a>
+                    <ul class="snb_depth2">
+                        <li><a href="#">시간표관리</a></li>
+                        <li><a href="#">강의평가</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">수강</a>
+                    <ul class="snb_depth2">
+                        <li><a href="#">수강관리</a></li>
+                        <li><a href="#">수강출력</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">성적</a>
+                    <ul class="snb_depth2">
+                        <li><a href="#">성적처리</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">역량</a>
+                    <ul class="snb_depth2">
+                        <li><a href="#">운영및평가</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">장학</a>
+                    <ul class="snb_depth2">
+                        <li><a href="#">장학금신청 및 조회</a></li>
+                        <li><a href="#">근로장학생</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">등록</a>
+                    <ul class="snb_depth2">
+                        <li><a href="#">등록생관리</a></li>
+                        <li><a href="#">등록출력</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">졸업</a>
+                    <ul class="snb_depth2">
+                        <li><a href="#">졸업출력</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">학생이력</a>
+                    <ul class="snb_depth2">
+                        <li><a href="#">학생신상관리(학생)</a></li>
+                        <li><a href="#">이력관리(학생)</a></li>
+                        <li><a href="#">포트폴리오관리(학생)</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">상담</a>
+                    <ul class="snb_depth2">
+                        <li><a href="#">상담관리</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+</th:block>
+<!-- sidebarFragment 선언 끝 -->
+</body>
+</html>

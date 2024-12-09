@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Bokjeung Portal</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" th:inline="css" th:href="@{/css/main.css}">
+  <script th:inline="javascript" type="text/javascript" th:src="@{/js/main.js}"></script>
+</head>
+<body>
+<div class="container">
+  <div class="left-panel">
+    <div class="logo">
+      <img src="/path/to/logo.png" alt="Bokjeung Portal Service Logo">
+    </div>
+    <h1>BOKJEUNG PORTAL</h1>
+    <p>BOGJEUNG UNIVERSITY</p>
+    <a href="/pages/login" class="login-link">로그인(Login)</a>
+  </div>
+  <div class="right-panel">
+    <div class="services">
+      <h2>BOKJEUNG SERVICE</h2>
+      <div class="service-icons">
+        <div class="service">
+          <img src="/path/to/icon1.png" alt="활동정보">
+          <p>활동정보</p>
+        </div>
+        <div class="service">
+          <img src="/path/to/icon2.png" alt="수강신청">
+          <p>수강신청</p>
+        </div>
+        <div class="service">
+          <img src="/path/to/icon3.png" alt="성적조회">
+          <p>성적조회</p>
+        </div>
+        <div class="service">
+          <img src="/path/to/icon4.png" alt="행정업무">
+          <p>행정업무</p>
+        </div>
+      </div>
+    </div>
+    <div class="scholarship-status">
+      <h2>SCHOLARSHIP STATUS</h2>
+      <!-- 장학금 상태 영역 -->
+    </div>
+    <div class="announcement">
+      <h2>ANNOUNCEMENT</h2>
+      <ul>
+        <li th:each="announcement : ${announcements}">
+          <span th:text="${announcement.date}"></span>
+          <span th:text="${announcement.text}"></span>
+        </li>
+      </ul>
+    </div>
+    <div class="academic-calendar">
+      <h2>ACADEMIC CALENDAR</h2>
+      <ul>
+        <li>17일: 2학기 종강</li>
+        <li>25일: 크리스마스</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
+
