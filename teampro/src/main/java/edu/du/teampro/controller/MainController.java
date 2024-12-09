@@ -22,4 +22,10 @@ public class MainController {
 
     @GetMapping("/extest")
     public String extest() {return "pages/extest";}
+
+    @GetMapping("/depth0101")
+    public String depth0101() {return "pages/depth/depth0101";}
+
+    @GetMapping("/depth0102")
+    public String depth0102() {return "pages/depth/depth0102";}
 }
