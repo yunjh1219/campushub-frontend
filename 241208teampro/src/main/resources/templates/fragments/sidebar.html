@@ -16,7 +16,7 @@
 
             </div>
             <ul class="snb_depth1">
-                <li class="sidebar-item" data-menu="home" style="display: none;">
+                <li>
                     <a>학적</a>
                     <ul class="snb_depth2">
                         <li>
@@ -31,7 +31,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="sidebar-item" data-menu="home" style="display: none;">
+                <li>
                     <a>수업</a>
                     <ul class="snb_depth2">
                         <li>
@@ -48,7 +48,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="sidebar-item" data-menu="home" style="display: none;">
+                <li>
                     <a href="#">수강</a>
                     <ul class="snb_depth2">
                         <li>
@@ -67,7 +67,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="sidebar-item" data-menu="home" style="display: none;">
+                <li>
                     <a href="#">성적</a>
                     <ul class="snb_depth2">
                         <li>
@@ -79,14 +79,33 @@
                         </li>
                     </ul>
                 </li>
-                <li class="sidebar-item" data-menu="home" style="display: none;">
+                <li>
                     <a href="#">역량</a>
                     <ul class="snb_depth2">
                         <li><a href="#">운영및평가</a></li>
                     </ul>
                 </li>
-
-                <li class="sidebar-item" data-menu="home" style="display: none;">
+                <li>
+                    <a href="#">장학</a>
+                    <ul class="snb_depth2">
+                        <li><a href="#">장학금신청 및 조회</a></li>
+                        <li><a href="#">근로장학생</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">등록</a>
+                    <ul class="snb_depth2">
+                        <li><a href="#">등록생관리</a></li>
+                        <li><a href="#">등록출력</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">졸업</a>
+                    <ul class="snb_depth2">
+                        <li><a href="#">졸업출력</a></li>
+                    </ul>
+                </li>
+                <li>
                     <a href="#">학생이력</a>
                     <ul class="snb_depth2">
                         <li><a href="#">학생신상관리(학생)</a></li>
@@ -94,12 +113,18 @@
                         <li><a href="#">포트폴리오관리(학생)</a></li>
                     </ul>
                 </li>
+                <li>
+                    <a href="#">상담</a>
+                    <ul class="snb_depth2">
+                        <li><a href="#">상담관리</a></li>
+                    </ul>
+                </li>
 
-                <li class="sidebar-item" data-menu="about" style="display: none;">
+                <!-- 'about' 메뉴 클릭 시 표시될 항목 -->
+                <li th:if="${selectedMenu == 'about'}">
                     <a href="#">About 관련 메뉴</a>
                     <!-- 더 많은 서브 메뉴들 -->
                 </li>
-
             </ul>
         </nav>
     </aside>
