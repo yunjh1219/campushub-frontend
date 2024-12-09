@@ -1,0 +1,18 @@
+/* 사이드바 고정 스타일 */
+.sidebar {
+    width: 250px;                  /* 사이드바 너비 */
+    background-color: #222;        /* 배경색 */
+    color: white;                  /* 글자색 */
+    height: 100vh;                 /* 화면 전체 높이 */
+    position: fixed;               /* 사이드바를 고정 */
+    top: 60px;                     /* 헤더 높이에 맞춰 사이드바 시작 위치 조정 */
+    left: 0;                       /* 화면 왼쪽에 고정 */
+    padding-top: 20px;             /* 사이드바 위쪽 여백 */
+    z-index: 999;                  /* 사이드바는 헤더 아래로 설정 */
+}
+
+.snb{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
