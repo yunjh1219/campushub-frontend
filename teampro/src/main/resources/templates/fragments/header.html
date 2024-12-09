@@ -5,15 +5,24 @@
 </head>
 <!-- headerFragment 선언 -->
 <th:block th:fragment="headerFragment">
-    <header>
-        <div class="logo">My Logo</div>
-        <nav>
-            <!-- 헤더 부분 (클릭 시 class 변경) -->
-            <a href="#" id="homeMenu" class="menu-item" data-menu="home">학사관리</a>
-            <a href="#" id="aboutMenu" class="menu-item" data-menu="about">행정관리</a>
-            <a href="#" id="contactMenu" class="menu-item" data-menu="contact">Contact</a>
+    <div class="header">
+        <nav class="gnb">
+            <div class="logo">
+                <a href="/" class="logo">People</a>
+            </div>
+            <ul class="gnb_depth1">
+                <li>
+                    <a href="#" id="homeMenu" class="menu-item" data-menu="home">학사관리</a>
+                </li>
+            </ul>
+            <ul class="gnb_depth1">
+                <li>
+                    <a href="#" id="aboutMenu" class="menu-item" data-menu="about">행정관리</a>
+                </li>
+            </ul>
+
         </nav>
-    </header>
+    </div>
 </th:block>
 <!-- headerFragment 선언 -->
 </html>
