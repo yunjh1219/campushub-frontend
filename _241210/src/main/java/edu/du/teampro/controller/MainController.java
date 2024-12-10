@@ -24,12 +24,20 @@ public class MainController {
     @GetMapping("/extest")
     public String extest() {return "pages/extest";}
 
-    @GetMapping("/depth0101")
-    public String depth0101() {return "pages/depth/depth0101";}
+    @GetMapping("/H1depth0101")
+    public String H1depth0101() {return "pages/H1depth/depth0101";}
 
-    @GetMapping("/depth0102")
-    public String depth0102() {return "pages/depth/depth0102";}
+    @GetMapping("/H1depth0102")
+    public String H1depth0102() {return "pages/H1depth/depth0102";}
 
 
+    @GetMapping("/H2depth0101")
+    public String H2depth0101() {return "pages/H2depth/depth0101";}
+
+    @GetMapping("/H2depth0102")
+    public String H2depth0102() {return "pages/H2depth/depth0102";}
+
+    @GetMapping("/H2depth0103")
+    public String H2depth0103() {return "pages/H2depth/depth0103";}
 
 }

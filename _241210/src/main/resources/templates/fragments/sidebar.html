@@ -2,6 +2,7 @@
 <html lang="ko" xmlns:th="http://www.thymeleaf.org">
 <head>
   <title> 사이드바 영역 </title>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
 </head>
 <body>
 <!-- sidebarFragment 선언 -->
@@ -22,8 +23,8 @@
                         <li>
                             <a>변경 및 신청</a>
                             <ul class="snb_depth3">
-                                <li><a href="/depth0101">학적변동신청</a></li>
-                                <li><a href="/depth0102">개인정보변경(학생용)</a></li>
+                                <li><a href="/H1depth0101">학적변동신청</a></li>
+                                <li><a href="/H1depth0102">개인정보변경(학생용)</a></li>
                                 <li><a href="#">융복합트랙제신청</a></li>
                                 <li><a href="#">졸업유보자 수강학점신청</a></li>
                                 <li><a href="#">자율주행트랙제신청</a></li>
@@ -82,8 +83,17 @@
 
 
                 <li class="sidebar-item" data-menu="about" style="display: none;">
-                    <a href="#">About 관련 메뉴</a>
-                    <!-- 더 많은 서브 메뉴들 -->
+                    <a href="#">등록</a>
+                    <ul class="snb_depth2">
+                        <li>
+                            <a href="#">등록출력</a>
+                            <ul class="snb_depth3">
+                                <li><a href="/H2depth0101">등록금 납부 확인</a></li>
+                                <li><a href="/H2depth0102">등록금 고지서 확인</a></li>
+                                <li><a href="/H2depth0103">복학신청</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </li>
 
             </ul>
