@@ -32,11 +32,11 @@
     flex-direction: column; /* 세로 방향으로 항목을 배치 */
 }
 
-.student-info {
+.box2 .student-info {
     display: block; /* 각 항목을 세로로 나열 */
 }
 
-.student-info div {
+.box2 .student-info div {
     margin-bottom: 10px; /* 항목 간의 간격 */
     padding: 10px;
     border: 1px solid #ccc;
@@ -46,12 +46,12 @@
     background-color: #e4e4e4;
 }
 
-.student-info div p {
+.box2 .student-info div p {
     margin: 0;
     margin-left: 10px; /* strong과 p 간의 간격 */
 }
 
-.student-info div strong {
+.box2 .student-info div strong {
     display: inline-block;
     font-weight: bold;
 }
