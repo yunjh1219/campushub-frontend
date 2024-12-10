@@ -1,0 +1,1 @@
+<script th:inline="javascript" type="text/javascript" th:src="@{/js/main.js}"></script>
